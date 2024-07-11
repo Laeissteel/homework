@@ -33,17 +33,20 @@
   background: white;
   position: absolute;
   inset: -35% -100%;
-
+  transition-timing-function: ease;
+  transition-duration: 1s;
 }
 
 .block:hover .line {
   width: 300%;
-  transition-timing-function: ease;
+
+}
+
+.text {
+  transition-delay: 1s;
   transition-duration: 1s;
 }
 
 .block:hover .text {
   color: green;
-  transition-delay: 1s;
-  transition-duration: 1s;
 }
