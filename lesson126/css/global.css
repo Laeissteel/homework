@@ -1,0 +1,163 @@
+:root {
+	--akcentnyy: #ffa55c;
+	--akcentnyy-2: #ceaad0;
+	--fonovyy: #ffe0cb;
+	--fonovyy-svetlyy: #fff9f4;
+	--zagolovochnyy: #1f1711;
+	--nabornyy: #312c27;
+	--fioletovyy: #704174;
+	--disabled: #e1d9e1;
+	--inputy: #ac907a;
+	--transition: all .4s;
+	--border-radius: 20px;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 100px;
+}
+
+.body {
+	font-family: "Montserrat", "Arial", sans-serif;
+	line-height: 1.5;
+	color: var(--nabornyy);
+	background: var(--fonovyy-svetlyy);
+}
+
+.body--opened-menu {
+	overflow: hidden;
+}
+
+.body--opened-modal {
+	overflow: hidden;
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.main__about {
+	padding: 140px 0;
+}
+
+.main__program, 
+.main__gallery,
+.main__testimonials {
+	padding-bottom: 140px;
+}
+
+
+.container {
+	max-width: 1310px;
+	margin: 0 auto;
+	padding: 0 15px;
+	height: 100%;
+}
+
+.title {
+	font-family: "Gabriola";
+	font-size: 74px;
+	line-height: .82;
+	color: var(--zagolovochnyy);
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100px;
+	padding: 3px 5px;
+	height: 62px;
+	background: var(--akcentnyy);
+	width: 100%;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	transition: var(--transition);
+}
+
+.button:hover {
+	background: #ff9138;
+}
+
+.modal {
+	position: fixed;
+	inset: 0;
+	z-index: 10;
+	background: #00000071;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+
+	opacity: 0;
+	visibility: hidden;
+	transition: all .6s;
+}
+
+.body--opened-modal .modal {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+
+.field {
+	display: block;
+	position: relative;
+}
+
+.field span {
+	position: absolute;
+	top: 12px;
+	left: 28px;
+
+	font-size: 11px;
+	color: var(--inputy);
+	opacity: 0;
+	visibility: hidden;
+	transition: var(--transition);
+}
+
+.field__input {
+	display: block;
+	border: 1px solid var(--inputy);
+	border-radius: 100px;
+	padding: 19px 28px;
+	width: 100%;
+	font-size: 16px;
+	background: #00000000;
+	transition: var(--transition);
+}
+
+
+.field__input:hover {
+	border-color: var(--akcentnyy);
+}
+.field__input::placeholder {
+	color: var(--inputy);
+	transition: var(--transition);
+}
+
+.field__input:hover::placeholder {
+	color: var(--akcentnyy);
+}
+
+.field__input:focus {
+	padding: 26px 28px 12px;
+}
+
+.field__input:focus+span {
+	opacity: 1;
+	visibility: visible;
+}

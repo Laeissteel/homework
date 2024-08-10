@@ -1,0 +1,47 @@
+.modal__window {
+	background: var(--fonovyy-svetlyy);
+	border-radius: var(--border-radius);
+	position: relative;
+	padding: 0 60px 60px;
+	max-width: 428px;
+}
+
+.modal__cansel {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.modal__cansel rect,
+.modal__cansel path {
+	transition: var(--transition);
+}
+
+
+.modal__cansel:hover rect,
+.modal__cansel:hover path {
+	stroke: var(--inputy);
+}
+
+.modal__img {
+	max-width: 100%;
+	margin: -65px 0 15px 12px;
+}
+
+.modal__title {
+	font-family: "Gabriola";
+	font-size: 42px;
+	line-height: .9;
+	color: var(--zagolovochnyy);
+	margin-bottom: 10px;
+}
+
+.modal__text {
+	margin-bottom: 30px;
+}
+
+.modal__form {}
+
+.modal__label {
+	margin-bottom: 10px;
+}
