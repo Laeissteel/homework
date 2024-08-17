@@ -1,0 +1,27 @@
+.link {
+  width: 70px;
+  height: 70px;
+}
+
+.link:hover path {
+  fill: #27a331;
+}
+
+.link-2 {
+  width: 70px;
+  height: 70px;
+}
+
+
+
+.link-2:hover path[fill-rule] {
+  fill: #27a331;
+}
+
+.link-2:hover circle,
+.link-2:hover rect,
+.link-2:hover line,
+.link-2:hover path,
+.link-2:hover ellipse {
+  stroke: #27a331;
+}
