@@ -1,0 +1,64 @@
+:root {
+  --font-family: "PT Sans Narrow", "Arial", sans-serif;
+  --second-family: "Roboto", "Arial", sans-serif;
+  --third-family: "Roboto Condensed", "Arial", sans-serif;
+  --accent-color: #666666;
+  --second-color: #bb8e34;
+  --third-color: #757575;
+  --accent-background: #fafafa;
+  --transition: all .5s;
+  --border-radius: 6px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
+.body {
+  font-family: var(--font-family);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: var(--accent-color);
+}
+
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1310px;
+	margin: 0 auto;
+	padding: 0 15px;
+	height: 100%;
+}
+
+.main {
+	flex-grow: 1;
+  background: url("../img/bg.png");
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  min-height: 32px;
+  width: 100%;
+  padding: 2px 5px;
+  background: #bb8e34;
+
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fafafa;
+}
+
