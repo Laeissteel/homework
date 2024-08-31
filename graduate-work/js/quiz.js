@@ -14,28 +14,28 @@ const quizQuestions = [
   {
     question: "Какой тип укладки Вас интересует?",
     answers: {
-      a: "../img/example/example11.jpg",
-      b: "../img/example/example21.jpg",
-      c: "../img/example/example31.jpg",
-      d: "../img/example/example25.jpg"
+      a: "img/example/example11.jpg",
+      b: "img/example/example21.jpg",
+      c: "img/example/example31.jpg",
+      d: "img/example/example25.jpg"
     }
   },
   {
     question: "Какой тип укладки Вас интересует?",
     answers: {
-      a: "../img/example/example11.jpg",
-      b: "../img/example/example21.jpg",
-      c: "../img/example/example31.jpg",
-      d: "../img/example/example25.jpg"
+      a: "img/example/example11.jpg",
+      b: "img/example/example21.jpg",
+      c: "img/example/example31.jpg",
+      d: "img/example/example25.jpg"
     }
   },
   {
     question: "Какой тип укладки Вас интересует?",
     answers: {
-      a: "../img/example/example11.jpg",
-      b: "../img/example/example21.jpg",
-      c: "../img/example/example31.jpg",
-      d: "../img/example/example25.jpg"
+      a: "img/example/example11.jpg",
+      b: "img/example/example21.jpg",
+      c: "img/example/example31.jpg",
+      d: "img/example/example25.jpg"
     }
   },
   
