@@ -1,0 +1,68 @@
+.footer {
+  background: #1f2b38;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 46px 0;
+  
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.07;
+}
+
+.footer__company {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer__logo {
+  max-height: 60px;
+}
+
+.footer__border {
+  border: 1.17px solid #798797;
+  width: 0;
+  height: 48px;
+  opacity: 0.2;
+}
+
+.footer__info {
+  color: #fff;
+}
+
+.footer__info p {
+  margin-bottom: 5px;
+}
+
+.socials {
+  display: flex;
+  gap: 22px;
+}
+
+.socials__link {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__pay {
+  display: flex;
+  gap: 20px;
+  color: #c9cccf;
+}
+
+.footer__pay p {
+  max-width: 106px;
+}
+
+.footer__mobil {
+  display: none;
+}
